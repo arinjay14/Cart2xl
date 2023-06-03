@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "Cart to Excel",
+    "version": "1.0",
+    "description": "Convert cart details to Excel format",
+    "permissions": ["tabs", "storage"],
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [{
+        "matches": ["https://www.bzaar.com/*"],
+        "js": ["contentScript.js"]
+    }]
+}
